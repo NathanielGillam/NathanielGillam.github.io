@@ -1,10 +1,25 @@
-# Web Dev Starter
-Starter (boilerplate) for all future web projects.
+## Usage
 
-## What is this?
+* This template uses tailwind css every tailwind class are prefixed with `tw-`, to help differentiate
+  between tailwind classes and other classes  
 
-* Starting point for static websites
+During development add the following to head tag
 
-## How do I use this?
+```html
+<link rel="stylesheet" href="tailwind-runtime.css"><!--replace with path to your tailwind runtime-->
+```
+During production use
 
-* Clone this repo!
+```html
+<link rel="stylesheet" href="tailwind-build.css"><!--replace with path to your tailwind build-->
+```
+
+To start Tailwind during development use
+```html
+npm run start:tailwind
+```
+
+To create a build file use
+```html
+npm run build:tailwind
+```
